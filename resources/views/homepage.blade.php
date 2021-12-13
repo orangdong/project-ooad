@@ -43,25 +43,25 @@
             <ul id='produk-lokal-list'>
                 <li>
                     <a href="">
-                        <img src={{Storage::url('public/images/homepage-produk-lokal1.png')}} alt="Kerajinan Batik">
+                        <img src='assets/homepage-produk-lokal1.png' alt="Kerajinan Batik">
                         <span>Kerajinan Batik</span>
                     </a>
                 </li>
                 <li>
                     <a href="">
-                        <img src={{Storage::url('public/images/homepage-produk-lokal2.png')}} alt="Jawada">
+                        <img src='assets/homepage-produk-lokal2.png' alt="Jawada">
                         <span>Jawada</span>
                     </a>
                 </li>
                 <li>
                     <a href="">
-                        <img src={{Storage::url('public/images/homepage-produk-lokal3.png')}} alt="Kolo">
+                        <img src='assets/homepage-produk-lokal3.png' alt="Kolo">
                         <span>Kolo</span>
                     </a>
                 </li>
                 <li>
                     <a href="">
-                        <img src={{Storage::url('public/images/homepage-produk-lokal4.png')}} alt="Manggulu">
+                        <img src='assets/homepage-produk-lokal4.png' alt="Manggulu">
                         <span>Manggulu</span>
                     </a>
                 </li>
@@ -72,19 +72,19 @@
             <ul id='layanan-tersedia-list'>
                 <li>
                     <a href="">
-                        <img src={{Storage::url('public/images/homepage-layanan-tersedia1.png')}} alt="">
+                        <img src='assets/homepage-layanan-tersedia1.png' alt="">
                         <span>Penginapan</span>
                     </a>
                 </li>
                 <li>
                     <a href="">
-                        <img src={{Storage::url('public/images/homepage-layanan-tersedia2.png')}} alt="">
+                        <img src='assets/homepage-layanan-tersedia2.png' alt="">
                         <span>Pemanduan Wisata</span>
                     </a>
                 </li>
                 <li>
                     <a href="">
-                        <img src={{Storage::url('public/images/homepage-layanan-tersedia3.png')}} alt="">
+                        <img src='assets/homepage-layanan-tersedia3.png' alt="">
                         <span>Transportasi</span>
                     </a>
                 </li>
@@ -95,7 +95,7 @@
             <ul id='jelajahi-toko-list'>
                 <li>
                     <a href="">
-                        <img src={{Storage::url('public/images/jelajahi-toko1.png')}} alt="">
+                        <img src='assets/jelajahi-toko1.png' alt="">
                         <div>
                             <span class='toko-name'>Batik Nusa</span>
                             <span class='quantity-sold'>36 produk dijual</span>
@@ -104,7 +104,7 @@
                 </li>
                 <li>
                     <a href="">
-                        <img src={{Storage::url('public/images/jelajahi-toko2.png')}} alt="">
+                        <img src='assets/jelajahi-toko2.png' alt="">
                         <div>
                             <span class='toko-name'>Juara Jawada</span>
                             <span class='quantity-sold'>40 produk dijual</span>
@@ -113,7 +113,7 @@
                 </li>
                 <li>
                     <a href="">
-                        <img src={{Storage::url('public/images/jelajahi-toko3.png')}} alt="">
+                        <img src='assets/jelajahi-toko3.png' alt="">
                         <div>
                             <span class='toko-name'>Rumah kolo</span>
                             <span class='quantity-sold'>10 produk dijual</span>
@@ -122,7 +122,7 @@
                 </li>
                 <li>
                     <a href="">
-                        <img src={{Storage::url('public/images/jelajahi-toko4.png')}} alt="">
+                        <img src='assets/jelajahi-toko4.png' alt="">
                         <div>
                             <span class='toko-name'>Manggulu Mantap</span>
                             <span class='quantity-sold'>13 produk dijual</span>
