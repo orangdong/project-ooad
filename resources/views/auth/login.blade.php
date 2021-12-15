@@ -1,48 +1,308 @@
-<x-guest-layout>
-    <x-jet-authentication-card>
-        <x-slot name="logo">
-            <x-jet-authentication-card-logo />
-        </x-slot>
+<!DOCTYPE html>
+<html lang="en">
 
-        <x-jet-validation-errors class="mb-4" />
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NTT Market</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" 
+        integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+</head>
 
-        @if (session('status'))
-            <div class="mb-4 font-medium text-sm text-green-600">
-                {{ session('status') }}
+<body>
+    <section class="h-100 w-100" style="box-sizing: border-box; background-color: #f5f5f5">
+        <style>
+            @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+            .content-4-1 .btn:focus,
+            .content-4-1 .btn:active {
+                outline: none !important;
+            }
+            .no-select {
+            -webkit-touch-callout: none; /* iOS Safari */
+                -webkit-user-select: none; /* Safari */
+                -khtml-user-select: none; /* Konqueror HTML */
+                -moz-user-select: none; /* Old versions of Firefox */
+                    -ms-user-select: none; /* Internet Explorer/Edge */
+                        user-select: none; /* Non-prefixed version, currently
+                                            supported by Chrome, Edge, Opera and Firefox */
+            }
+
+            .content-4-1 .width-left {
+                width: 0%;
+            }
+
+            .content-4-1 .width-right {
+                width: 100%;
+                height: 100%;
+                padding: 8rem 2rem;
+                background-color: #fcfdff;
+            }
+
+            .content-4-1 .centered {
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            .content-4-1 .right {
+                width: 100%;
+            }
+
+            .content-4-1 .title-text {
+                font: 600 1.875rem/2.25rem Poppins, sans-serif;
+                margin-bottom: 0.75rem;
+            }
+
+            .content-4-1 .caption-text {
+                font: 400 0.875rem/1.75rem Poppins, sans-serif;
+                color: #a8adb7;
+            }
+
+            .content-4-1 .input-label {
+                font: 500 1.125rem/1.75rem Poppins, sans-serif;
+                color: #39465b;
+            }
+
+            .content-4-1 .div-input {
+                font: 300 1rem/1.5rem Poppins, sans-serif;
+                padding: 1rem 1.25rem;
+                margin-top: 0.75rem;
+                border-radius: 0.75rem;
+                border: 1px solid #cacbce;
+                color: #2a3240;
+                transition: 0.3s;
+            }
+
+            .content-4-1 .div-input:focus-within {
+                border: 1px solid #2ec49c;
+                color: #2a3240;
+                transition: 0.3s;
+            }
+
+            .content-4-1 .div-input input::placeholder {
+                color: #cacbce;
+                transition: 0.3s;
+            }
+
+            .content-4-1 .div-input:focus-within input::placeholder {
+                color: #2a3240;
+                outline: none;
+                transition: 0.3s;
+            }
+
+            .content-4-1 .div-input .icon-toggle-empty-4-1 path,
+            .content-4-1 .div-input:focus-within .icon path {
+                transition: 0.3;
+                fill: #2ec49c;
+                transition: 0.3s;
+            }
+
+            .content-4-1 .input-field {
+                font: 300 1rem/1.5rem Poppins, sans-serif;
+                width: 100%;
+                background-color: #fcfdff;
+                transition: 0.3s;
+            }
+
+            .content-4-1 .input-field:focus {
+                outline: none;
+                transition: 0.3s;
+            }
+
+            .content-4-1 .forgot-password {
+                font: 400 0.875rem/1.25rem Poppins, sans-serif;
+                color: #cacbce;
+                transition: 0.3s;
+                text-decoration: none;
+            }
+
+            .content-4-1 .forgot-password:hover {
+                color: #2a3240;
+            }
+
+            .content-4-1 .btn-fill {
+                font: 500 1.25rem/1.75rem Poppins, sans-serif;
+                background-image: linear-gradient(rgba(91, 203, 173, 1),
+                        rgba(39, 194, 153, 1));
+                padding: 0.75rem 1rem;
+                margin-top: 2.25rem;
+                border-radius: 0.75rem;
+                transition: 0.5s;
+            }
+
+            .content-4-1 .btn-fill:hover {
+                background-image: linear-gradient(#2ec49c, #2ec49c);
+                transition: 0.5s;
+            }
+
+            .content-4-1 .bottom-caption {
+                font: 400 0.875rem/1.25rem Poppins, sans-serif;
+                margin-top: 2rem;
+                color: #2a3240;
+            }
+
+            .content-4-1 .green-bottom-caption {
+                color: #2ec49c;
+                font-weight: 500;
+            }
+
+            .content-4-1 .green-bottom-caption:hover {
+                color: #2ec49c;
+                cursor: pointer;
+                text-decoration: underline;
+            }
+
+            @media (min-width: 576px) {
+                .content-4-1 .width-right {
+                    padding: 8rem 4rem;
+                }
+
+                .content-4-1 .right {
+                    width: 58.333333%;
+                }
+            }
+
+            @media (min-width: 768px) {
+                .content-4-1 .right {
+                    width: 66.666667%;
+                }
+            }
+
+            @media (min-width: 992px) {
+                .content-4-1 .width-left {
+                    width: 48%;
+                }
+
+                .content-4-1 .width-right {
+                    width: 52%;
+                }
+
+                .content-4-1 .right {
+                    width: 75%;
+                }
+            }
+
+            @media (min-width: 1200px) {
+                .content-4-1 .right {
+                    width: 58.333333%;
+                }
+            }
+            .auth-background {
+                background-image: url('{{asset('assets/auth-background.png')}}');
+                background-size: 1000px;
+                background-repeat: no-repeat;
+                background-position: left center;
+            }
+
+        </style>
+        <div class="content-4-1 d-flex flex-column align-items-center h-100 flex-lg-row no-select auth-background"
+            style="font-family: 'Poppins', sans-serif">
+            <div class="position-relative d-none d-lg-block h-100 width-left ">
+                {{-- <img class="position-absolute img-fluid centered"
+                    src="{{asset('assets/auth-background.png')}}"
+                    alt="" /> --}}
             </div>
-        @endif
-
-        <form method="POST" action="{{ route('login') }}">
-            @csrf
-
-            <div>
-                <x-jet-label for="email" value="{{ __('Email') }}" />
-                <x-jet-input id="email" class="block mt-1 w-full" type="email" name="email" :value="old('email')" required autofocus />
+            <div class="d-flex mx-auto align-items-left justify-content-left width-right mx-lg-0">
+                <div class="right mx-lg-0 mx-auto">
+                    <div class="align-items-center justify-content-center d-lg-none d-flex">
+                        <img class="img-fluid"
+                            src="{{asset('assets/auth-background.png')}}"
+                            alt="" />
+                    </div>
+                    <h3 class="title-text">Log In to continue</h3>
+                    <p class="caption-text">
+                        Login menggunakan akun yang terdaftar<br />
+                        sebelum mengakses website.
+                    </p>
+                    <form style="margin-top: 1.5rem" action="{{ route('login') }}" method="post">
+                        @csrf
+                        {{-- Alert --}}
+                        @if (session('status'))
+                            <div style="font-size: 16px;line-height: 1.25rem;color: rgba(5, 150, 105);font-weight: 500;" class="mb-4">
+                                {{ session('status') }}
+                            </div>
+                        @endif
+                        @if ($errors->any())
+                            <div style="border-radius: 14px; font-size: 14px" class="alert alert-danger" role="alert">
+                            <p style="font-weight: 600" class="text-gray-800 fs-6">Something Went Wrong</p>
+                            @foreach ($errors->all() as $error)
+                                <li>{{$error}}</li>
+                            @endforeach	
+                            </div>
+                        @endif
+                        <div style="margin-bottom: 1.75rem">
+                            <label for="" class="d-block input-label">Username</label>
+                            <div class="d-flex w-100 div-input">
+                                <div style="margin-right: 1rem;">
+                                    <i width="24" height="24" style="color: #CACBCE;" class="fas fa-user icon"></i>
+                                </div>
+                                <input class="input-field border-0" type="text" name="email"
+                                    placeholder="Your Username" autocomplete="off" required />
+                            </div>
+                        </div>
+                        <div style="margin-top: 1rem">
+                            <label for="" class="d-block input-label">Password</label>
+                            <div class="d-flex w-100 div-input">
+                                <svg class="icon" style="margin-right: 1rem" width="24" height="24"
+                                    viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M7.81592 4.25974C7.12462 5.48872 7 6.95088 7 8H6C4.34315 8 3 9.34315 3 11V19C3 20.6569 4.34315 22 6 22H18C19.6569 22 21 20.6569 21 19V11C21 9.34315 19.6569 8 18 8L17 7.99998C17 6.95087 16.8754 5.48871 16.1841 4.25973C15.829 3.62845 15.3194 3.05012 14.6031 2.63486C13.8875 2.22005 13.021 2 12 2C10.979 2 10.1125 2.22005 9.39691 2.63486C8.68058 3.05012 8.17102 3.62845 7.81592 4.25974ZM9.55908 5.24026C9.12538 6.01128 9 7.04912 9 8H15C15 7.04911 14.8746 6.01129 14.4409 5.24027C14.2335 4.87155 13.9618 4.57488 13.6 4.36514C13.2375 4.15495 12.729 4 12 4C11.271 4 10.7625 4.15495 10.4 4.36514C10.0382 4.57488 9.76648 4.87155 9.55908 5.24026ZM14 14C14 14.7403 13.5978 15.3866 13 15.7324V17C13 17.5523 12.5523 18 12 18C11.4477 18 11 17.5523 11 17V15.7324C10.4022 15.3866 10 14.7403 10 14C10 12.8954 10.8954 12 12 12C13.1046 12 14 12.8954 14 14Z"
+                                        fill="#CACBCE" />
+                                </svg>
+                                <input class="input-field border-0" type="password" name="password" id="password-content-4-1"
+                                    placeholder="Your Password" minlength="6" required />
+                                <div onclick="togglePassword()">
+                                    <svg style="margin-left: 0.75rem; cursor: pointer" width="20" height="14"
+                                        viewBox="0 0 20 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path id="icon-toggle" fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M0 7C0.555556 4.66667 3.33333 0 10 0C16.6667 0 19.4444 4.66667 20 7C19.4444 9.52778 16.6667 14 10 14C3.31853 14 0.555556 9.13889 0 7ZM10 5C8.89543 5 8 5.89543 8 7C8 8.10457 8.89543 9 10 9C11.1046 9 12 8.10457 12 7C12 6.90536 11.9934 6.81226 11.9807 6.72113C12.2792 6.89828 12.6277 7 13 7C13.3608 7 13.6993 6.90447 13.9915 6.73732C13.9971 6.82415 14 6.91174 14 7C14 9.20914 12.2091 11 10 11C7.79086 11 6 9.20914 6 7C6 4.79086 7.79086 3 10 3C10.6389 3 11.2428 3.14979 11.7786 3.41618C11.305 3.78193 11 4.35535 11 5C11 5.09464 11.0066 5.18773 11.0193 5.27887C10.7208 5.10171 10.3723 5 10 5Z"
+                                            fill="#CACBCE" />
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-end" style="margin-top: 0.75rem">
+                            @if (Route::has('password.request'))
+                                <a href="{{ route('password.request') }}" class="forgot-password fst-italic no-select">Lupa Password?</a>
+                            @endif
+                            
+                        </div>
+                        <button class="btn btn-fill text-white d-block w-100" type="submit">
+                            Log In
+                        </button>
+                    </form>
+                    <p class="text-center bottom-caption no-select">
+                        Belum punya akun?
+                        <a class="green-bottom-caption" href="{{route('register')}}">Daftar di sini</a>
+                    </p>
+                </div>
             </div>
+        </div>
 
-            <div class="mt-4">
-                <x-jet-label for="password" value="{{ __('Password') }}" />
-                <x-jet-input id="password" class="block mt-1 w-full" type="password" name="password" required autocomplete="current-password" />
-            </div>
+        <!-- Password toggle -->
+        <script>
+            function togglePassword() {
+                var x = document.getElementById("password-content-4-1");
+                if (x.type === "password") {
+                    x.type = "text";
+                    document
+                        .getElementById("icon-toggle")
+                        .setAttribute("fill", "#2ec49c");
+                } else {
+                    x.type = "password";
+                    document
+                        .getElementById("icon-toggle")
+                        .setAttribute("fill", "#CACBCE");
+                }
+            }
+        </script>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous">
+    </script>
+</body>
 
-            <div class="block mt-4">
-                <label for="remember_me" class="flex items-center">
-                    <x-jet-checkbox id="remember_me" name="remember" />
-                    <span class="ml-2 text-sm text-gray-600">{{ __('Remember me') }}</span>
-                </label>
-            </div>
-
-            <div class="flex items-center justify-end mt-4">
-                @if (Route::has('password.request'))
-                    <a class="underline text-sm text-gray-600 hover:text-gray-900" href="{{ route('password.request') }}">
-                        {{ __('Forgot your password?') }}
-                    </a>
-                @endif
-
-                <x-jet-button class="ml-4">
-                    {{ __('Log in') }}
-                </x-jet-button>
-            </div>
-        </form>
-    </x-jet-authentication-card>
-</x-guest-layout>
+</html>
