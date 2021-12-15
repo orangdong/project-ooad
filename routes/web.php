@@ -17,6 +17,6 @@ Route::get('/', function () {
     return view('manageStore');
 });
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
-    return view('dashboard');
+Route::middleware(['auth:sanctum'])->get('/dashboard', function () {
+    return 'logged in';
 })->name('dashboard');

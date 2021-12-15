@@ -2,6 +2,7 @@
 
 namespace App\Actions\Fortify;
 
+use App\Models\Seller;
 use App\Models\User;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
@@ -24,13 +25,33 @@ class CreateNewUser implements CreatesNewUsers
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'email', 'max:255', 'unique:users'],
             'password' => $this->passwordRules(),
+            'username' => ['required', 'string', 'max:255', 'unique:users'],
+            'date_of_birth' => ['required', 'string'],
+            'address' => ['required', 'string'],
+            'number' => ['required', 'numeric'],
             'terms' => Jetstream::hasTermsAndPrivacyPolicyFeature() ? ['required', 'accepted'] : '',
         ])->validate();
 
-        return User::create([
-            'name' => $input['name'],
-            'email' => $input['email'],
-            'password' => Hash::make($input['password']),
-        ]);
+        if($input['role'] == 'user'){
+            return User::create([
+                'name' => $input['name'],
+                'email' => $input['email'],
+                'password' => Hash::make($input['password']),
+                'username' => $input['username'],
+                'date_of_birth' => $input['date_of_birth'],
+                'address' => $input['address'],
+                'number' => $input['number'],
+            ]);
+        }else{
+            return Seller::create([
+                'name' => $input['name'],
+                'email' => $input['email'],
+                'password' => Hash::make($input['password']),
+                'username' => $input['username'],
+                'date_of_birth' => $input['date_of_birth'],
+                'address' => $input['address'],
+                'number' => $input['number'],
+            ]);
+        }
     }
 }
