@@ -26,7 +26,7 @@
         <div class='container' id='container-produk'>
             <div id='container-produk-header'>
                 <h2>Semua produk</h2>
-                <a href="">Tambah</a>
+                <button id='tambah-produk-btn'>Tambah</button>
             </div>
             <table id='container-produk-content'>
                 <thead>
@@ -68,7 +68,7 @@
         <div class='container' id='container-layanan'>
             <div id='container-layanan-header'>
                 <h2>Semua layanan</h2>
-                <a href="">Tambah</a>
+                <button id='tambah-layanan-btn'>Tambah</button>
             </div>
             <table id='container-layanan-content'>
                 <thead>
@@ -98,5 +98,6 @@
         </div>
     </main>
     @include('footer')
+    <script src='/js/manageStore.js'></script>
 </body>
 </html>

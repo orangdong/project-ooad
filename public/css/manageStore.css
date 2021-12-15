@@ -58,11 +58,11 @@ body{
     font-size: 35px;
 }
 
-#container-produk-header a, #container-layanan-header a{
+#container-produk-header button, #container-layanan-header button{
     background-color: #7AEAFF;
     font-weight: bold;
     color: black;
-    text-decoration: none;
+    border:none;
     padding: 10px 40px;
     border-radius: 30px;
 }
@@ -119,3 +119,66 @@ body{
     margin-bottom: 200px;
 }
 
+#form-bg{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(31,31,31,0.48);
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#formProduk{
+    background-color: white;
+    padding: 30px 60px;
+    border-radius: 20px;
+}
+
+#formProduk div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+#formProduk div input{
+    background-color: #EBEBEB;
+    color: #8D8D8D;
+    border: none;
+    padding: 10px 15px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+#deskripsiProduk{
+    padding-bottom: 100px !important;
+}
+
+label{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#harga-jumlah-container{
+    display: flex;
+    flex-direction: row !important;
+}
+#harga-container{
+    margin-right: 60px;
+}
+#button-container{
+    display: block !important;
+    text-align: center;
+}
+
+#button-container button{
+    border: none;
+    background-color: #7AEAFF;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 10px 40px;
+    margin-top: 15px;
+}
