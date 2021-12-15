@@ -5,10 +5,10 @@
         <i class="fas fa-search"></i>
     </div>
     <div id='widget-container'>
-        <button><i class="far fa-comments"></i></button>
-        <button><i class="fas fa-receipt"></i></button>
-        <button><i class="fas fa-store-alt"></i></button>
-        <button><i class="far fa-user-circle"></i></button>
-        <button><i class="fas fa-cog"></i></button>
+        <a href=""><i class="far fa-comments"></i></a>
+        <a href=""><i class="fas fa-receipt"></i></a>
+        <a href=""><i class="fas fa-store-alt"></i></a>
+        <a href=""><i class="far fa-user-circle"></i></a>
+        <a href=""><i class="fas fa-cog"></i></a>
     </div>
 </header>

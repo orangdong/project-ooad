@@ -8,6 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/storepage.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/headermsme.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <title>Document</title>
 </head>
@@ -19,23 +21,23 @@
             <p>Alamat: Labuan Bajo, Manggarai Barat</p>
             <a href="">Forum</a>
         </div>
-        <div>
-            <div>
+        <div id='container'>
+            <div id='container-header'>
                 <h2>Semua produk dan layanan</h2>
-                <a href="">kelola toko</a>
+                <a href="">Kelola toko</a>
             </div>
-            <ul>
+            <ul id='container-content'>
                 <li>
                     <a href="">
-                        <img src='assets/kelola-item' alt="item 1">
+                        <img src='assets/kelola-item.png' alt="item 1">
                         <p>Batik NTT</p>
                         <p>Rp. 250.000</p>
-                        <p>Stock: 5</p>
+                        <p class='stock'>Stock: 5</p>
                     </a>
                 </li>
                 <li>
                     <a href="">
-                        <img src={{Storage::url('public/images/kelola-item')}} alt="item 2">
+                        <img src='assets/kelola-item.png' alt="item 2">
                         <p>Batik NTT</p>
                         <p>Rp. 150.000</p>
                         <p>Stock: 15</p>
@@ -43,7 +45,7 @@
                 </li>
                 <li>
                     <a href="">
-                        <img src={{Storage::url('public/images/kelola-item')}} alt="item 3">
+                        <img src='assets/kelola-item.png' alt="item 3">
                         <p>Batik NTT</p>
                         <p>Rp. 150.000</p>
                         <p>Stock: 15</p>
@@ -51,7 +53,7 @@
                 </li>
                 <li>
                     <a href="">
-                        <img src={{Storage::url('public/images/kelola-item')}} alt="item 4">
+                        <img src='assets/kelola-item.png' alt="item 4">
                         <p>Batik NTT</p>
                         <p>Rp. 150.000</p>
                         <p>Stock: 15</p>
@@ -59,23 +61,23 @@
                 </li>
                 <li>
                     <a href="">
-                        <img src={{Storage::url('public/images/kelola-item')}} alt="item 5">
+                        <img src='assets/kelola-item.png' alt="item 5">
                         <p>Batik NTT</p>
                         <p>Rp. 250.000</p>
-                        <p>Stock: 5</p>
+                        <p class='stock'>Stock: 5</p>
                     </a>
                 </li>
                 <li>
                     <a href="">
-                        <img src={{Storage::url('public/images/kelola-item')}} alt="item 6">
+                        <img src='assets/kelola-item.png' alt="item 6">
                         <p>Batik NTT</p>
                         <p>Rp. 250.000</p>
-                        <p>Stock: 5</p>
+                        <p class='stock'>Stock: 5</p>
                     </a>
                 </li>
                 <li>
                     <a href="">
-                        <img src={{Storage::url('public/images/kelola-item')}} alt="item 7">
+                        <img src='assets/kelola-item.png' alt="item 7">
                         <p>Batik NTT</p>
                         <p>Rp. 150.000</p>
                         <p>Stock: 15</p>
@@ -83,7 +85,7 @@
                 </li>
                 <li>
                     <a href="">
-                        <img src={{Storage::url('public/images/kelola-item')}} alt="item 8">
+                        <img src='assets/kelola-item.png' alt="item 8">
                         <p>Batik NTT</p>
                         <p>Rp. 150.000</p>
                         <p>Stock: 15</p>

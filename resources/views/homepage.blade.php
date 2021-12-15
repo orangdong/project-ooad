@@ -9,15 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/homepage.css">
+    <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
-    <style>
-        header{
-            background-image: url({{Storage::url('public/images/homepage-jumbotron.jpeg')}});
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -32,7 +25,7 @@
                 <a href="">Sign Up</a>
             </div>
         </div>
-        <h2 id='title'>Jelajahi Nusa Tenggara Timur </br> Dengan Satu Klik</h2>
+        <h2 id='title'>Jelajahi Nusa Tenggara Timur <br> Dengan Satu Klik</h2>
         <div id='jelajahi-container'>
             <a href="" id='jelajahi'>Jelajahi</a>
         </div>
