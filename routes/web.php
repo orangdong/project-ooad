@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('storePageTourist');
+    return view('cart');
 });
 
 Route::middleware(['auth:sanctum'])->get('/dashboard', function () {
