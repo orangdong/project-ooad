@@ -1,0 +1,145 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+
+#jumbotron{
+    background-image: url('../assets/jumbotron-storepage.JPG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    position: relative;
+}
+
+#jumbotron h2{
+    font-size: 35px;
+    font-weight: bold;
+    margin: 0;
+    padding-top: 150px;
+    margin-left: 30px;
+}
+#jumbotron p{
+    font-weight: bold;
+    margin: 0;
+    margin-left: 30px;
+    padding-bottom: 30px;
+}
+
+#container{
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#container-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#container-header h2{
+    font-size: 35px;
+}
+
+#container-header a{
+    background-color: #7AEAFF;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    padding: 10px 40px;
+    border-radius: 30px;
+}
+
+#container-content{
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+    width: 100%;
+    gap: 30px;
+    padding: 0;
+    row-gap: 50px;
+    margin-bottom: 150px;
+}
+#container-content li{
+    max-width: 20vw;
+    background-color: white;
+    padding-bottom: 5px;
+    border-radius: 30px;
+    box-shadow: 0 5px 5px lightgray;
+    position: relative;
+}
+#container-content li a{
+  text-decoration: none;
+  color: black;
+}
+
+#container-content li a img{
+    width: 20vw;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    margin: 0;
+    margin-bottom: 5px;
+}
+
+#container-content li a p{
+    margin: 0;
+    margin-bottom: 5px;
+    padding-left: 20px;
+}
+
+.stock{
+    color: red;
+}
+
+.add-cart-btn{
+    font-weight: bold;
+    background-color: #7AE9FF;
+    border:none;
+    border-radius: 50%;
+    font-size: 30px;
+    padding: 0 12px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.edit-qty-btn{
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background-color: #E0E1E1;
+    border-radius: 10px;
+}
+
+.min-qty-btn, .plus-qty-btn{
+    background-color: #7AE9FF;
+    font-size: 20px;
+    padding: 0 10px;
+    font-weight: bold;
+    border:none;
+    border-radius: 10px;
+}
+
+.qty{
+    padding: 0 10px;
+    font-weight: bold;
+}
+
+#btn-container{
+    text-align: center;
+    margin-bottom: 30px;
+}
+#order-btn{
+    background-color: #7AE9FF;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 30px;
+    text-decoration: none;
+    color: black;
+}
