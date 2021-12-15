@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('storepage');
+    return view('manageStore');
 });
 
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
