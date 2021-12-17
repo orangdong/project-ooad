@@ -1,0 +1,49 @@
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#search-container{
+    flex-grow: 1;
+    position: relative;
+}
+#widget-container{
+    margin:25px 40px;
+}
+
+#widget-container a{
+    font-size: 25px;
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+}
+#notif-container{
+    position: relative;
+}
+
+h1{
+    font-size: 25px;
+    font-weight: normal;
+    margin-left: 30px;
+    margin-right: 60px;
+}
+#searchbar{
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 20px;
+    padding: 10px 30px;
+}
+.fa-search{
+    position: absolute;
+    top: 8px;
+    right: 20px;
+    font-size: 25px;
+}
+
+#notif{
+    position: absolute;
+    top: 0;
+    left: 10px;
+    width: 20px;
+}
