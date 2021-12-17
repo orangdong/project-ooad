@@ -1,0 +1,78 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+#jumbotron{
+    background-image: url('../assets/jumbotron-storepage.JPG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    position: relative;
+}
+
+#jumbotron h2{
+    font-size: 35px;
+    font-weight: bold;
+    margin: 0;
+    padding-top: 150px;
+    margin-left: 30px;
+}
+#jumbotron p{
+    font-weight: bold;
+    margin: 0;
+    margin-left: 30px;
+    padding-bottom: 30px;
+}
+#judul
+{
+    width: 70%;
+    margin: auto;
+}
+#container
+{
+    /* background-color: orange; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#gambar-holder
+{
+    /* background-color: pink; */
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    row-gap: 20px;
+    column-gap: 90px;
+    
+}
+#satu img
+{
+    width: 150px;
+    /* height: 75px; */
+    /* border: 3px solid #C4C4C4; */
+    border-radius: 20px;
+    margin-top: 15px;
+}
+#checkout
+{
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 40px;
+}
+#checkout a
+{
+    text-decoration: none;
+    background-color: #7AE9FF;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    padding: 15px 60px;
+    border-radius: 15px;
+    color: black;
+    text-align: center;
+}
