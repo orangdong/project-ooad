@@ -120,3 +120,33 @@ body{
     color: black;
     text-align: center;
 }
+
+#popup-bg{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(31,31,31,0.48);
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#popup{
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+#popup img{
+    width: 125px;
+}
+
+#popup p{
+    font-weight: bold;
+    font-size: 25px;
+    margin-left: 25px;
+}
