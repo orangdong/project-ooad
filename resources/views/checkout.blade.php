@@ -62,7 +62,7 @@
                         <input type="tel" id='telp' name="telp">
                     </div>
                     <div id='container-content-pay'>
-                        <a href=''>Bayar</a>
+                        <button>Bayar</button>
                     </div>
                 </div>
             </div>
