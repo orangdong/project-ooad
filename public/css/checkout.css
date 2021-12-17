@@ -1,0 +1,123 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    padding: 0;
+    margin: 0;
+}
+
+
+#jumbotron{
+    background-image: url('../assets/jumbotron-storepage.JPG');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    position: relative;
+}
+
+#jumbotron h2{
+    font-size: 35px;
+    font-weight: bold;
+    margin: 0;
+    padding-top: 150px;
+    margin-left: 30px;
+}
+#jumbotron p{
+    font-weight: bold;
+    margin: 0;
+    margin-left: 30px;
+    padding-bottom: 30px;
+}
+
+#container{
+    width: 70%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+
+#container-content{
+    background-color: #EBE9E9;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+#container-content-lower{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+#container-content-upper{
+    margin-bottom: 15px;
+}
+#container-content-upper img{
+    width: 150px;
+    border: 3px solid #C4C4C4;
+    border-radius: 20px;
+    margin-top: 15px;
+}
+
+#container-content-table{
+    margin-left: 15px;
+    border-collapse: collapse;
+    font-size: 20px;
+}
+
+#td-harga-barang{
+    padding-right: 80px;
+    border-top: 1px solid black;
+}
+#td-total-harga{
+    border-top: 1px solid black;
+}
+.border-bawah{
+    border-bottom: 1px solid black;
+}
+.td-pad-bawah{
+    padding-bottom: 5px;
+}
+.td-pad-atas{
+    padding-top: 5px;
+}
+#container-content-right{
+    margin-right: 50px;
+    margin-left: 50px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+#container-content-phone{
+    font-weight: bold;
+    width: 90%;
+    font-size: 20px;
+    text-align: center;
+}
+
+#container-content-phone p{
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+#container-content-phone input{
+    width: 70%;
+    padding: 5px;
+    border: 1px solid black;
+    border-radius: 15px;
+}
+
+#container-content-pay a{
+    background-color: #7AE9FF;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    padding: 15px 60px;
+    border-radius: 15px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
