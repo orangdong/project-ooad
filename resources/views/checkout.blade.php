@@ -62,12 +62,19 @@
                         <input type="tel" id='telp' name="telp">
                     </div>
                     <div id='container-content-pay'>
-                        <button>Bayar</button>
+                        <button id='pay-btn'>Bayar</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     @include('footer')
+    {{-- <div id='popup-bg'>
+        <div id='popup'>
+            <img src="/assets/tick-icon.png" alt="">
+            <p>Pembayaran Anda Berhasil</p>
+        </div>
+    </div> --}}
+    <script src='js/checkout.js'></script>
 </body>
 </html>
