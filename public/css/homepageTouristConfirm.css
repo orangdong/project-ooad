@@ -200,13 +200,15 @@ main div{
     position: absolute;
     display: flex;
     flex-direction: column;
-    bottom: -170px;
+    bottom: -195px;
     background-color: white;
-    padding: 15px 25px;
-    width: 150%;
+    padding: 15px 20px;
+    width: 170%;
     text-align: center;
     right: 60px;
     border-radius: 15px;
+    border: 1px solid black;
+    font-size: 18px;
 }
 
 #confirm2-text1{
@@ -215,7 +217,7 @@ main div{
 }
 
 #confirm2-text2{
-    font-size: 10px;
+    font-size: 12px;
 }
 
 #confirm2-button-container{
@@ -237,5 +239,55 @@ main div{
     font-size: 14px;
     border: none;
     padding: 5px 15px;
+    border-radius: 20px;
+}
+#confirm1-container{
+    position: absolute;
+    bottom: -210px;
+    left: -270px;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: white;
+    padding: 15px;
+    border: 1px solid black;
+    width: 200%;
+    align-items: flex-start !important;
+    border-radius: 20px;
+}
+#confirm1-title{
+    font-weight: bold;
+    width: 100%;
+    margin: 0;
+    font-size: 20px;
+}
+#confirm1-content{
+    display:flex;
+    align-items: flex-start;
+    margin: 10px;
+    margin-bottom: 0;
+}
+#confirm1-content img{
+    width: 50px;
+}
+#confirm1-list{
+    list-style: none;
+    padding: 0;
+    padding-left: 10px;
+    margin-bottom: 0;
+}
+#confirm1-shopname{
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+#confirm1-ok-btn{
+    position:absolute;
+    bottom: 15px;
+    right: 20px;
+    background-color: #7AEAFF;
+    font-weight: bold;
+    font-size: 16px;
+    border: none;
+    padding: 5px 20px;
     border-radius: 20px;
 }
