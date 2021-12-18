@@ -5,6 +5,7 @@
 body{
     padding: 0;
     margin: 0;
+    position: relative;
 }
 
 #jumbotron{
@@ -20,123 +21,205 @@ body{
     font-size: 35px;
     font-weight: bold;
     margin: 0;
-    padding-top: 100px;
-    padding-bottom: 50px;
-    margin-left: 80px;
+    padding-top: 150px;
+    margin-left: 30px;
+    padding-bottom: 40px;
 }
 
-.container-header{
-    margin-left: 100vh;
-    padding-left: 200px;
+#container{
+    width: 90%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 150px;
 }
 
-.content-main-lower{
+#container-header{
+    text-align: right;
+    margin-bottom: 30px;
+}
+
+#new-thread-btn{
+    background-color: #7AEAFF;
+    font-weight: bold;
+    color: black;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 25px;
+    font-size: 20px;
+}
+#container-content{
+    border: 3px solid #C4C4C4;
+}
+#container-content-header{
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+}
+#container-content-header img{
+    width: 60px;
+    margin-right: 20px;
+}
+#container-content-header div{
+    flex-grow: 1;
+}
+
+#reply-btn{
+    font-weight: bold;
+    border: none;
+    background-color: #7AEAFF;
+    padding: 7px 20px;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+#container-content-header-text{
+    padding-top: 20px;
+}
+
+#thread-creator{
+    font-weight: bold;
+    font-size: 19px;
+    margin: 0;
+}
+
+#thread-title{
+    font-size: 19px;
+    color: #A19D9D;
+}
+
+#container-content-content{
+    display: flex;
+    padding: 40px 30px;
     background-color: #EFE9E9;
 }
 
-.content-text p{
-    color: white;
+#container-content-images{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 10px;
 }
 
-.content-main-upper{
-    justify-content: space-between;
-}
-
-.content-main-upper1{
-    justify-content: space-around
-}
-
-
-.image-content{
-    margin: 22px;
-    margin-left: 25px;
-}
-
-.image-content1{
-    margin: 22px;
-    
-}
-
-.content-main{
-    margin-left: 150px;
-    margin-bottom: 100px;
-}
-
-.content-main-upper-middle{
-    margin-top: 20px;
-    margin-left: -250px;
-}
-
-.content-main-upper-middle h6{
-    color: grey;
-}
-
-.Button-content{
-    margin-right: 50px;
-}
-
-.content-img{
-    margin: 50px;
-}
-
-.content-text{
-    margin: 25px;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.content-text p{
-    color: black;
-}
-
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  }
-  
-  /* Modal Content */
-  .modal-content {
-    background-color: #fefefe;
-    margin: auto;
+#container-content-content-text{
+    font-size: 20px;
     padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-  }
-  
-  /* The Close Button */
-  .close {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+}
+
+#popup-bg{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(31,31,31,0.48);
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#new-thread-form{
+    background-color: white;
+    padding: 30px 60px;
+    border-radius: 20px;
+    width: 50%;
+}
+#new-thread-form h2{
     font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-  }
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 
-  #popup{
-      margin-left: 50vh;
-      margin-right: 50vh;
-  }
+#new-thread-form div{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
 
-  #myDIV1{
-      display: none;
-  }
+#new-thread-form div input{
+    background-color: #EBEBEB;
+    color: #8D8D8D;
+    border: none;
+    padding: 10px 15px;
+    font-weight: bold;
+    border-radius: 10px;
+}
 
-  #BalasThreadBaru1{
-      margin-left: -50px;
-      margin-right: 300px;
-  }
+#isi-container, #judul-container{
+    margin-left: 20px;
+}
+
+#isi{
+    padding-bottom: 100px !important;
+}
+
+label{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#button-container{
+    display: block !important;
+    text-align: center;
+}
+
+#button-container button{
+    border: none;
+    background-color: #7AEAFF;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 10px 70px;
+    margin-top: 15px;
+}
+
+#reply-tab{
+    display: flex;
+    padding: 30px 40px;
+}
+
+#reply-tab img{
+    width: 60px;
+    height: 60px;
+}
+
+#reply-container{
+    flex-grow: 1;
+    border: 2px solid #C4C4C4;
+    margin-left: 20px;
+    position: relative;
+}
+
+#reply-container input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+}
+
+#cancel-btn{
+    position: absolute;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #EFE9E9;
+    padding: 5px 40px;
+    border: none;
+    border-radius: 20px;
+    bottom: 10px;
+    right: 140px;
+}
+
+#ok-btn{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #7AEAFF;
+    padding: 5px 40px;
+    border: none;
+    border-radius: 20px;
+}
+

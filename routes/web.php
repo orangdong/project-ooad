@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('homepageTouristConfirm');
+    return view('forumFix');
 });
 
 Route::middleware(['auth:sanctum'])->get('/dashboard', function () {
