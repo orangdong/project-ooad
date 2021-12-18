@@ -130,6 +130,7 @@
             </ul>
         </div>
     </main>
+    
     @include('footer')
     <script src="js/homepageTouristConfirm.js"></script>
 </body>

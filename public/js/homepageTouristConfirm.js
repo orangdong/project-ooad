@@ -35,6 +35,10 @@ function confirm2(){
 
     const okButton = document.createElement('button');
     okButton.id = 'confirm2-ok-btn';
+    okButton.addEventListener("click",()=>{
+        widgetContainer.removeChild(confirm2Container);
+        confirm3();
+    });
     okButton.textContent = 'Konfirmasi';
     confirm2ButtonContainer.appendChild(okButton);
 }
@@ -97,6 +101,101 @@ function confirm1(){
     confirm1Container.appendChild(okBtn);
 }
 
+function confirm3()
+{
+    const widgetContainer = document.querySelector('#widget-container');
+    const confirm3Container = document.createElement('div');
+    confirm3Container.id="confirm3-container";
+    widgetContainer.appendChild(confirm3Container);
+    confirm3Container.addEventListener("click",(e)=>{
+        e.stopPropagation();
+    })
+
+    const judulC3 = document.createElement('h2');
+    judulC3.id="judul-c3";
+    judulC3.textContent="Terima kasih telah berbelanja di Batik nusa";
+    confirm3Container.appendChild(judulC3);
+
+    const ratingtxt = document.createElement('div');
+    ratingtxt.id="ratingtxt-c3";
+    ratingtxt.textContent="Berikan rating untuk Batik Nusa";
+    confirm3Container.appendChild(ratingtxt);
+
+    const star = document.createElement('div');
+    confirm3Container.appendChild(star);
+
+    for(let i = 0; i<5;i++)
+    {
+        const star1 = document.createElement('i');
+        star1.classList.add("fas","fa-star");
+        star.appendChild(star1);
+    }
+    
+    const ratingtxt1 = document.createElement('div');
+    ratingtxt1.id="ratingtxt-c3";
+    ratingtxt1.textContent="Berikan feedback untuk Batik Nusa";
+    confirm3Container.appendChild(ratingtxt1);
+
+    const apa = document.createElement('div');
+    apa.id="apa";
+    confirm3Container.appendChild(apa);
+
+    const fo = document.createElement('form');
+    fo.id="inputfeedback";
+    apa.appendChild(fo);
+
+    const fe = document.createElement('input');
+    fe.id="feedback";
+    fe.placeholder="Masukkan feedback anda";
+    fo.appendChild(fe);
+
+    const but = document.createElement('div');
+    but.id="c3-buttoncontainer"
+    confirm3Container.appendChild(but);
+
+    const but1 = document.createElement('div');
+    but.appendChild(but1);
+    const but2 = document.createElement('button');
+    but2.id="c3-button"
+    but2.textContent="Lewati";
+    but2.addEventListener("click",()=>{
+        widgetContainer.removeChild(confirm3Container);
+    })
+    but1.appendChild(but2);
+
+    const but3 = document.createElement('div');
+    but.appendChild(but3);
+    const but4 = document.createElement('button');
+    but4.id="c3-buttons"
+    but4.textContent="Kirim";
+    but4.addEventListener("click",()=>{
+        widgetContainer.removeChild(confirm3Container);
+    })
+    but3.appendChild(but4);
+}
+
+{/* <div id="confirm3-container">
+                    <div id="judul-c3">Terima kasih telah berbelanja di Batik nusa</div>
+                    <div id="ratingtxt-c3">Berikan rating untuk Batik Nusa</div>
+                    <div>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <div id="ratingtxt-c3">Berikan feedback untuk Batik Nusa</div>
+                    <div id="apa">
+                        <form action="" id="inputfeedback">
+                            <input id="feedback" type="text" placeholder="Masukkan feedback anda">
+                        </form>
+                    </div>
+                    <div id="c3-buttoncontainer">
+                        <div><button id="c3-button">Lewati</button></div>
+                        <div><button id="c3-buttons">Kirim</button></div>
+                    </div>
+                </div> */}
+
 const notifBtn = document.querySelector('#notif-container');
 notifBtn.addEventListener('click', (e)=>{
     e.stopPropagation();
@@ -113,5 +212,7 @@ body.addEventListener('click', (e)=>{
     const confirm2 = document.querySelector('#confirm2-container');
     if(confirm2) widgetContainer.removeChild(confirm2);
 
-
+    const confirm3 = document.querySelector('#confirm3-container');
+    if(confirm3) widgetContainer.removeChild(confirm3);
+    
 });
