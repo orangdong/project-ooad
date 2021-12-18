@@ -291,3 +291,73 @@ main div{
     padding: 5px 20px;
     border-radius: 20px;
 }
+#confirm3-container{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    bottom: -365px;
+    background-color: white;
+    padding: 15px 20px;
+    width: 200%;
+    text-align: center;
+    right: 60px;
+    border-radius: 15px;
+    border: 1px solid black;
+    font-size: 18px;
+}
+#judul-c3
+{
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 15px;
+    margin-left: 0px;
+}
+#ratingtxt-c3
+{
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+#c3-buttoncontainer
+{
+    width: 100%;
+}
+#c3-button
+{
+    background-color: #FF4444;
+    font-weight: bold;
+    font-size: 14px;
+    border: none;
+    padding: 5px 35px;
+    border-radius: 20px;
+}
+#c3-buttons
+{
+    background-color: #7AEAFF;
+    font-weight: bold;
+    font-size: 14px;
+    border: none;
+    padding: 5px 35px;
+    border-radius: 20px;
+}
+.fa-star
+{
+    font-size: 30px;
+    color: #7F7F7F;
+    margin-bottom: 15px;
+}
+#feedback
+{
+    width: 80%;
+    padding-bottom: 30px;
+}
+#apa
+{
+    /* background-color: purple; */
+    width: 100%;
+}
+#inputfeedback
+{
+    /* background-color: pink; */
+    width: 100%;
+    margin-bottom: 20px;
+}
