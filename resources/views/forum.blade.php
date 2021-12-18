@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="/css/headermsme.css">
     <link rel="stylesheet" href="/css/footer.css">
-    <link rel="stylesheet" href="/css/forumFix.css">
+    <link rel="stylesheet" href="/css/forum.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
@@ -56,6 +56,6 @@
        
     </div>
     @include('footer')
-    <script src='js/forumFix.js'></script>
+    <script src='js/forum.js'></script>
 </body>
 </html>
