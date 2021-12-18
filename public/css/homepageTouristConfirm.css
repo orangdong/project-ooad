@@ -37,6 +37,7 @@ header{
     background-color: white;
     padding: 0 10px;
     border-radius: 30px;
+    position: relative;
 }
 
 #widget-container a{
@@ -182,11 +183,59 @@ main div{
 
 #notif-container{
     position: relative;
+    font-size: 25px;
+    border:none;
+    background: none;
+    margin: 0 10px;
 }
 
 #notif{
     position: absolute;
     top: 0;
-    left: 10px;
+    left: 15px;
     width: 20px;
+}
+
+#confirm2-container{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    bottom: -170px;
+    background-color: white;
+    padding: 15px 25px;
+    width: 150%;
+    text-align: center;
+    right: 60px;
+    border-radius: 15px;
+}
+
+#confirm2-text1{
+    font-weight: bold;
+    margin: 0;
+}
+
+#confirm2-text2{
+    font-size: 10px;
+}
+
+#confirm2-button-container{
+    width: 100%;
+}
+
+#confirm2-cancel-btn{
+    background-color: #FF4444;
+    font-weight: bold;
+    font-size: 14px;
+    border: none;
+    padding: 5px 35px;
+    border-radius: 20px;
+}
+
+#confirm2-ok-btn{
+    background-color: #7AEAFF;
+    font-weight: bold;
+    font-size: 14px;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 20px;
 }

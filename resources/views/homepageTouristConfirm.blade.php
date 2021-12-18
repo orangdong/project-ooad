@@ -22,10 +22,10 @@
             </div>
             <div id='widget-container'>
                 <a href=""><i class="far fa-comments"></i></a>
-                <a href="" id='notif-container'>
+                <button id='notif-container'>
                     <img src="assets/alert-one.png" id='notif' alt="">
                     <i class="far fa-bell"></i>
-                </a>
+                </button>
                 <a href=""><i class="far fa-user-circle"></i></a>
                 <a href=""><i class="fas fa-cog"></i></a>
             </div>
@@ -131,5 +131,6 @@
         </div>
     </main>
     @include('footer')
+    <script src="js/homepageTouristConfirm.js"></script>
 </body>
 </html>
