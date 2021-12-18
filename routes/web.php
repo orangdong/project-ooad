@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('storePageMsmeNotif');
+    return view('homepageTouristConfirm');
 });
 
 Route::middleware(['auth:sanctum'])->get('/dashboard', function () {
