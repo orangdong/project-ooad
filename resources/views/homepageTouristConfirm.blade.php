@@ -111,7 +111,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="/dashboard/storepage">
                         <img src={{asset('assets/jelajahi-toko2.png')}} alt="">
                         <div>
                             <span class='toko-name'>Juara Jawada</span>
@@ -120,7 +120,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="/dashboard/storepage">
                         <img src={{asset('assets/jelajahi-toko3.png')}} alt="">
                         <div>
                             <span class='toko-name'>Rumah kolo</span>
@@ -129,7 +129,7 @@
                     </a>
                 </li>
                 <li>
-                    <a href="">
+                    <a href="/dashboard/storepage">
                         <img src={{asset('assets/jelajahi-toko4.png')}} alt="">
                         <div>
                             <span class='toko-name'>Manggulu Mantap</span>
