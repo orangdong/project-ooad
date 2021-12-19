@@ -2,7 +2,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 20px;
+    padding: 5px;
 }
 
 #search-container{
@@ -19,13 +19,18 @@ header{
     text-decoration: none;
     color: black;
 }
+.home-anchor{
+    text-decoration: none;
+    color: black;
+}
 
 h1{
-    font-size: 25px;
+    font-size: 20px !important;
     font-weight: normal;
     margin-left: 30px;
     margin-right: 60px;
     margin-bottom: 0px !important;
+    margin-top: 0 !important;
 }
 #searchbar{
     width: 100%;
@@ -51,3 +56,48 @@ h1{
         color: black;
         margin-right: 5px;
     }
+
+    
+#user-dropdown{
+    position: absolute;
+    bottom: -200px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 10px 40px;
+    border-radius: 20px;
+    visibility: hidden;
+}
+
+#user-dropdown h2{
+    font-size: 20px;
+    margin: 0;
+}
+#user-name{
+    margin: 0;
+    font-weight: bold;
+}
+
+#user-email{
+    margin: 0;
+    margin-bottom: 10px;
+}
+#profile-btn{
+    background-color: #7AEAFF;
+    border:none;
+    font-weight: bold;
+    font-size: 14px !important;
+    padding: 5px 30px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+}
+#logout-btn{
+
+    text-decoration: none;
+    font-size: 14px !important;
+    font-weight: bold;
+    background-color: #FF4444;
+    padding: 5px 40px;
+    border-radius: 12px;
+    margin-top: 10px;
+}

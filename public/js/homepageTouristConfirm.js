@@ -214,5 +214,7 @@ body.addEventListener('click', (e)=>{
 
     const confirm3 = document.querySelector('#confirm3-container');
     if(confirm3) widgetContainer.removeChild(confirm3);
-    
+
+    const userDropdown = document.querySelector('#user-dropdown');
+    if(userDropdown.style.visibility === 'visible') userDropdown.style.visibility = 'hidden';
 });

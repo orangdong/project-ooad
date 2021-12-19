@@ -21,12 +21,22 @@
                 <i class="fas fa-search"></i>
             </div>
             <div id='widget-container'>
-                <a href=""><i class="far fa-comments"></i></a>
+                <div id='user-dropdown'>
+                    <h2>Profile</h2>
+                    <p id='user-name'>{{Auth::user()->name}}</p>
+                    <p id="user-email">{{Auth::user()->email}}</p>
+                    <button id='profile-btn'>Edit Profile</button>
+                    <form action="/logout" method="POST">
+                        @csrf
+                        <button id="logout-btn" type='submit'>Logout</button>
+                    </form>
+                </div>
+                <a href="/dashboard/forum"><i class="far fa-comments"></i></a>
                 <button id='notif-container'>
-                    <img src="assets/alert-one.png" id='notif' alt="">
+                    <img src={{asset("assets/alert-one.png")}} id='notif' alt="">
                     <i class="far fa-bell"></i>
                 </button>
-                <a href=""><i class="far fa-user-circle"></i></a>
+                <a><i class="far fa-user-circle" id='user-btn'></i></a>
                 <a href=""><i class="fas fa-cog"></i></a>
             </div>
         </div>
@@ -41,25 +51,25 @@
             <ul id='produk-lokal-list'>
                 <li>
                     <a href="">
-                        <img src='assets/homepage-produk-lokal1.png' alt="Kerajinan Batik">
+                        <img src={{asset('assets/homepage-produk-lokal1.png')}} alt="Kerajinan Batik">
                         <span>Kerajinan Batik</span>
                     </a>
                 </li>
                 <li>
                     <a href="">
-                        <img src='assets/homepage-produk-lokal2.png' alt="Jawada">
+                        <img src={{asset('assets/homepage-produk-lokal2.png')}} alt="Jawada">
                         <span>Jawada</span>
                     </a>
                 </li>
                 <li>
                     <a href="">
-                        <img src='assets/homepage-produk-lokal3.png' alt="Kolo">
+                        <img src={{asset('assets/homepage-produk-lokal3.png')}} alt="Kolo">
                         <span>Kolo</span>
                     </a>
                 </li>
                 <li>
                     <a href="">
-                        <img src='assets/homepage-produk-lokal4.png' alt="Manggulu">
+                        <img src={{asset('assets/homepage-produk-lokal4.png')}} alt="Manggulu">
                         <span>Manggulu</span>
                     </a>
                 </li>
@@ -70,19 +80,19 @@
             <ul id='layanan-tersedia-list'>
                 <li>
                     <a href="">
-                        <img src='assets/homepage-layanan-tersedia1.png' alt="">
+                        <img src={{asset('assets/homepage-layanan-tersedia1.png')}} alt="">
                         <span>Penginapan</span>
                     </a>
                 </li>
                 <li>
                     <a href="">
-                        <img src='assets/homepage-layanan-tersedia2.png' alt="">
+                        <img src={{asset('assets/homepage-layanan-tersedia2.png')}} alt="">
                         <span>Pemanduan Wisata</span>
                     </a>
                 </li>
                 <li>
                     <a href="">
-                        <img src='assets/homepage-layanan-tersedia3.png' alt="">
+                        <img src={{asset('assets/homepage-layanan-tersedia3.png')}} alt="">
                         <span>Transportasi</span>
                     </a>
                 </li>
@@ -92,8 +102,8 @@
             <h2>Jelajahi toko</h2>
             <ul id='jelajahi-toko-list'>
                 <li>
-                    <a href="">
-                        <img src='assets/jelajahi-toko1.png' alt="">
+                    <a href="/dashboard/storepage">
+                        <img src={{asset('assets/jelajahi-toko1.png')}} alt="">
                         <div>
                             <span class='toko-name'>Batik Nusa</span>
                             <span class='quantity-sold'>36 produk dijual</span>
@@ -102,7 +112,7 @@
                 </li>
                 <li>
                     <a href="">
-                        <img src='assets/jelajahi-toko2.png' alt="">
+                        <img src={{asset('assets/jelajahi-toko2.png')}} alt="">
                         <div>
                             <span class='toko-name'>Juara Jawada</span>
                             <span class='quantity-sold'>40 produk dijual</span>
@@ -111,7 +121,7 @@
                 </li>
                 <li>
                     <a href="">
-                        <img src='assets/jelajahi-toko3.png' alt="">
+                        <img src={{asset('assets/jelajahi-toko3.png')}} alt="">
                         <div>
                             <span class='toko-name'>Rumah kolo</span>
                             <span class='quantity-sold'>10 produk dijual</span>
@@ -120,7 +130,7 @@
                 </li>
                 <li>
                     <a href="">
-                        <img src='assets/jelajahi-toko4.png' alt="">
+                        <img src={{asset('assets/jelajahi-toko4.png')}} alt="">
                         <div>
                             <span class='toko-name'>Manggulu Mantap</span>
                             <span class='quantity-sold'>13 produk dijual</span>
@@ -132,6 +142,7 @@
     </main>
     
     @include('footer')
-    <script src="js/homepageTouristConfirm.js"></script>
+    <script src={{asset("js/homepageTouristConfirm.js")}}></script>
+    <script src={{asset("js/userDropdown.js")}}></script>
 </body>
 </html>

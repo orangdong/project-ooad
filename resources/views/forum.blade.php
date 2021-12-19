@@ -29,7 +29,7 @@
         </div>
         <div id='container-content'>
             <div id='container-content-header'>
-                <img src="assets/user-icon.png" alt="">
+                <img src={{asset("assets/user-icon.png")}} alt="">
                 <div id='container-content-header-text'>
                     <p id='thread-creator'>Batik nusa</p>
                     <p id='thread-title'>Peringatan HUT Nusa Tenggara Barat ke-79</p>
@@ -40,10 +40,10 @@
             </div>
             <div id='container-content-content'>
                 <div id='container-content-images'>
-                    <img src="assets/forum1.jpg" alt="">
-                    <img src="assets/forum2.jpg" alt="">
-                    <img src="assets/forum3.jpg" alt="">
-                    <img src="assets/forum4.jpg" alt="">
+                    <img src={{asset("assets/forum1.jpg")}} alt="">
+                    <img src={{asset("assets/forum2.jpg")}} alt="">
+                    <img src={{asset("assets/forum3.jpg")}} alt="">
+                    <img src={{asset("assets/forum4.jpg")}} alt="">
                 </div>
                 <div id='container-content-content-text'>
                     <p id='text1'>Sehubung dengan Peringatan HUT NTB ke - 79.
@@ -60,6 +60,6 @@
        
     </div>
     @include('footer')
-    <script src='js/forum.js'></script>
+    <script src={{asset('js/forum.js')}}></script>
 </body>
 </html>
