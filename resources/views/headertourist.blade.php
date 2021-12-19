@@ -1,3 +1,4 @@
+
 <header>
     <h1>NTT Market</h1>
     <div id='search-container'>
@@ -13,7 +14,9 @@
         </div>
     @endauth
     @guest
-        <a href={{route('login')}}>Sign In</a>
-        <a href={{route('register')}}>Sign Up</a>
+    <div id="button-container" style="margin-left: 30px; margin-right: 15px">
+        <a class="button" href={{route('login')}}>Sign In</a>
+        <a class="button" href={{route('register')}}>Sign Up</a>
+    </div>
     @endguest
 </header>

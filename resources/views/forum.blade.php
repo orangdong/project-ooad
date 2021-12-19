@@ -23,7 +23,9 @@
     </div>
     <div id='container'>
         <div id='container-header'>
-            <button id='new-thread-btn'>Thread Baru</button>
+            @auth
+                <button id='new-thread-btn'>Thread Baru</button>    
+            @endauth
         </div>
         <div id='container-content'>
             <div id='container-content-header'>
@@ -32,7 +34,9 @@
                     <p id='thread-creator'>Batik nusa</p>
                     <p id='thread-title'>Peringatan HUT Nusa Tenggara Barat ke-79</p>
                 </div>
-                <button id='reply-btn'>Balas Thread</button>
+                @auth
+                    <button id='reply-btn'>Balas Thread</button>    
+                @endauth
             </div>
             <div id='container-content-content'>
                 <div id='container-content-images'>
