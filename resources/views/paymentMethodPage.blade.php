@@ -26,45 +26,46 @@
     <div id="container">
         <div id="gambar-holder">
             <div id="satu">
-                <img src="assets/logo-dana.png" alt="">
+                <img src={{asset("assets/logo-dana.png")}} alt="">
             </div>
             <div id="satu">
-                <img src="assets/logo-ovo.png" alt="">
+                <img src={{asset("assets/logo-ovo.png")}} alt="">
             </div>
             <div id="satu">
-                <img src="assets/logo-bca.png" alt="">
+                <img src={{asset("assets/logo-bca.png")}} alt="">
             </div>
             <div id="satu">
-                <img src="assets/logo-gopay.png" alt="">
+                <img src={{asset("assets/logo-gopay.png")}} alt="">
             </div>
             <div id="satu">
-                <img src="assets/logo-shoppe.png" alt="">
+                <img src={{asset("assets/logo-shoppe.png")}} alt="">
             </div>
             <div id="satu">
-                <img src="assets/logo-qris.png" alt="">
+                <img src={{asset("assets/logo-qris.png")}} alt="">
             </div>
             <div id="satu">
-                <img src="assets/logo-link.png" alt="">
+                <img src={{asset("assets/logo-link.png")}} alt="">
             </div>
             <div id="satu">
-                <img src="assets/logo-doku.png" alt="">
+                <img src={{asset("assets/logo-doku.png")}} alt="">
             </div>
             <div id="satu">
-                <img src="assets/logo-ran.png" alt="">
+                <img src={{asset("assets/logo-ran.png")}} alt="">
             </div>
             <div id="satu">
-                <img src="assets/logo-pay.png" alt="">
+                <img src={{asset("assets/logo-pay.png")}} alt="">
             </div>
             <div id="satu">
-                <img src="assets/logo-indomaret.png" alt="">
+                <img src={{asset("assets/logo-indomaret.png")}} alt="">
             </div>
             <div id="satu">
-                <img src="assets/logo-alfamart.png" alt="">
+                <img src={{asset("assets/logo-alfamart.png")}}
+                 alt="">
             </div>
         </div>
     </div>
     <div id="checkout">
-        <a href="">Checkout</a>
+        <a href={{route('checkout')}}>Checkout</a>
     </div>
     @include('footer')
 </body>

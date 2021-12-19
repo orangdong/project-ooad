@@ -18,4 +18,16 @@ class UserController extends Controller
     public function store_page(){
         return view('storePageTourist');
     }
+
+    public function cart(){
+        return view('cart');
+    }
+
+    public function payment_method(){
+        return view('paymentMethodPage');
+    }
+
+    public function checkout(){
+        return view('checkout');
+    }
 }

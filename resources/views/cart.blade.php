@@ -27,7 +27,7 @@
         <ul id='container-content'>
             <li>
                 <a href="">
-                    <img src='assets/kelola-item.png' alt="item 1">
+                    <img src={{asset('assets/kelola-item.png')}} alt="item 1">
                     <p>Batik NTT</p>
                     <p>Rp. 250.000</p>
                     <p class='stock'>Stock: 5</p>
@@ -40,7 +40,7 @@
             </li>
             <li>
                 <a href="">
-                    <img src='assets/kelola-item.png' alt="item 2">
+                    <img src={{asset('assets/kelola-item.png')}} alt="item 2">
                     <p>Batik NTT</p>
                     <p>Rp. 150.000</p>
                     <p>Stock: 15</p>
@@ -53,7 +53,7 @@
             </li>
             <li>
                 <a href="">
-                    <img src='assets/kelola-item.png' alt="item 3">
+                    <img src={{asset('assets/kelola-item.png')}} alt="item 3">
                     <p>Batik NTT</p>
                     <p>Rp. 150.000</p>
                     <p>Stock: 13</p>
@@ -112,7 +112,7 @@
         </table>
     </div>
    <div id='button-container'>
-       <a>Pilih metode pembayaran</a>
+       <a href={{route('paymentMethodPage')}}>Pilih metode pembayaran</a>
    </div>
     @include('footer')
 </body>

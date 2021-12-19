@@ -23,5 +23,8 @@ payBtn.addEventListener('click', ()=>{
     const p = document.createElement('p');
     p.textContent = 'Pembayaran Anda Berhasil';
     popup.appendChild(p);
+    setTimeout(()=>{
+        window.location.href = "/dashboard";
+    }, 5000);
 });
 

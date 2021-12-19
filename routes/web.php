@@ -24,4 +24,7 @@ Route::prefix('dashboard')->middleware(['auth:sanctum'])->group(function(){
     Route::get('/', [UserController::class, 'index']);
     Route::get('forum', [UserController::class, 'forum']);
     Route::get('storepage', [UserController::class, 'store_page']);
+    Route::get('cart',[UserController::class, 'cart'])->name('cart');
+    Route::get('paymentMethodPage', [UserController::class, 'payment_method'])->name('paymentMethodPage');
+    Route::get('checkout', [UserController::class, 'checkout'])->name('checkout');
 });

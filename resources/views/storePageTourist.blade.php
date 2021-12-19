@@ -26,93 +26,113 @@
         <ul id='container-content'>
             <li>
                 <a href="">
-                    <img src='assets/kelola-item.png' alt="item 1">
+                    <img src={{asset('assets/kelola-item.png')}} alt="item 1">
                     <p>Batik NTT</p>
                     <p>Rp. 250.000</p>
                     <p class='stock'>Stock: 5</p>
-                    <span class='edit-qty-btn'>
-                        <button class='min-qty-btn'>-</button>
-                        <span class='qty'>1</span>
-                        <button class='plus-qty-btn'>+</button>
-                    </span>
+                    @auth
+                        <span class='edit-qty-btn'>
+                            <button class='min-qty-btn'>-</button>
+                            <span class='qty'>1</span>
+                            <button class='plus-qty-btn'>+</button>
+                        </span>
+                    @endauth
+                  
                 </a>
             </li>
             <li>
                 <a href="">
-                    <img src='assets/kelola-item.png' alt="item 2">
+                    <img src={{asset('assets/kelola-item.png')}} alt="item 2">
                     <p>Batik NTT</p>
                     <p>Rp. 150.000</p>
                     <p>Stock: 15</p>
-                    <span class='edit-qty-btn'>
-                        <button class='min-qty-btn'>-</button>
-                        <span class='qty'>3</span>
-                        <button class='plus-qty-btn'>+</button>
-                    </span>
+                    @auth
+                        <span class='edit-qty-btn'>
+                            <button class='min-qty-btn'>-</button>
+                            <span class='qty'>3</span>
+                            <button class='plus-qty-btn'>+</button>
+                        </span>
+                    @endauth
                 </a>
             </li>
             <li>
                 <a href="">
-                    <img src='assets/kelola-item.png' alt="item 3">
+                    <img src={{asset('assets/kelola-item.png')}} alt="item 3">
                     <p>Batik NTT</p>
                     <p>Rp. 150.000</p>
                     <p>Stock: 15</p>
-                    <button class='add-cart-btn'>+</button>
+                    @auth
+                        <button class='add-cart-btn'>+</button>
+                    @endauth
                 </a>
             </li>
             <li>
                 <a href="">
-                    <img src='assets/kelola-item.png' alt="item 4">
+                    <img src={{asset('assets/kelola-item.png')}} alt="item 4">
                     <p>Batik NTT</p>
                     <p>Rp. 150.000</p>
                     <p>Stock: 15</p>
-                    <button class='add-cart-btn'>+</button>
+                    @auth
+                        <button class='add-cart-btn'>+</button>
+                    @endauth
                 </a>
             </li>
             <li>
                 <a href="">
-                    <img src='assets/kelola-item.png' alt="item 5">
+                    <img src={{asset('assets/kelola-item.png')}} alt="item 5">
                     <p>Batik NTT</p>
                     <p>Rp. 250.000</p>
                     <p class='stock'>Stock: 5</p>
-                    <button class='add-cart-btn'>+</button>
+                    @auth
+                        <button class='add-cart-btn'>+</button>
+                    @endauth
                 </a>
             </li>
             <li>
                 <a href="">
-                    <img src='assets/kelola-item.png' alt="item 6">
+                    <img src={{asset('assets/kelola-item.png')}} alt="item 6">
                     <p>Batik NTT</p>
                     <p>Rp. 250.000</p>
                     <p class='stock'>Stock: 5</p>
-                    <button class='add-cart-btn'>+</button>
+                    @auth
+                        <button class='add-cart-btn'>+</button>
+                    @endauth
                 </a>
             </li>
             <li>
                 <a href="">
-                    <img src='assets/kelola-item.png' alt="item 7">
+                    <img src={{asset('assets/kelola-item.png')}} alt="item 7">
                     <p>Batik NTT</p>
                     <p>Rp. 150.000</p>
                     <p>Stock: 15</p>
-                    <span class='edit-qty-btn'>
-                        <button class='min-qty-btn'>-</button>
-                        <span class='qty'>2</span>
-                        <button class='plus-qty-btn'>+</button>
-                    </span>
+                    @auth
+                        <span class='edit-qty-btn'>
+                            <button class='min-qty-btn'>-</button>
+                            <span class='qty'>2</span>
+                            <button class='plus-qty-btn'>+</button>
+                        </span>
+                    @endauth
                 </a>
             </li>
             <li>
                 <a href="">
-                    <img src='assets/kelola-item.png' alt="item 8">
+                    <img src={{asset('assets/kelola-item.png')}} alt="item 8">
                     <p>Batik NTT</p>
                     <p>Rp. 150.000</p>
                     <p>Stock: 15</p>
-                    <button class='add-cart-btn'>+</button>
+                    @auth
+                        <button class='add-cart-btn'>+</button>
+                    @endauth
                 </a>
             </li>
         </ul>
     </div>
-    <div id='btn-container'>
-        <a id='order-btn' href=''>Pesan Sekarang</a>
-    </div>
+    @auth
+        <div id='btn-container'>
+            <a id='order-btn' href={{route('cart')}}>Pesan Sekarang</a>
+        </div>
+    @endauth
+ 
     @include('footer')
 </body>
 </html>
