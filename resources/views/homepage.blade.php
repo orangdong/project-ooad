@@ -21,8 +21,8 @@
                 <i class="fas fa-search"></i>
             </div>
             <div id='button-container'>
-                <a href="">Sign In</a>
-                <a href="">Sign Up</a>
+                <a href="/login">Sign In</a>
+                <a href="/register">Sign Up</a>
             </div>
         </div>
         <h2 id='title'>Jelajahi Nusa Tenggara Timur <br> Dengan Satu Klik</h2>

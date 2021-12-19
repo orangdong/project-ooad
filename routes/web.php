@@ -1,5 +1,8 @@
 <?php
 
+use App\Http\Controllers\GuestController;
+use App\Http\Controllers\UserController;
+use App\Models\User;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -13,10 +16,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('orderpage');
-});
+Route::get('/', [GuestController::class, 'index']);
+Route::get('/forum', [GuestController::class, 'forum']);
+Route::get('/storepage',[GuestController::class, 'store_page']);
 
-Route::middleware(['auth:sanctum'])->get('/dashboard', function () {
-    return 'logged in';
-})->name('dashboard');
+Route::prefix('dashboard')->middleware(['auth:sanctum'])->group(function(){
+    Route::get('/', [UserController::class, 'index']);
+    Route::get('forum', [UserController::class, 'forum']);
+    Route::get('storepage', [UserController::class, 'store_page']);
+});
