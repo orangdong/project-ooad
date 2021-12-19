@@ -68,5 +68,7 @@
         <a href={{route('checkout')}}>Checkout</a>
     </div>
     @include('footer')
+    <script src={{asset("js/paymentMethodPage.js")}}></script>
+    <script src={{asset("js/userDropdown.js")}}></script>
 </body>
 </html>

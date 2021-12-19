@@ -71,5 +71,6 @@
     @include('footer')
 
     <script src={{asset('js/checkout.js')}}></script>
+    <script src={{asset("js/userDropdown.js")}}></script>
 </body>
 </html>

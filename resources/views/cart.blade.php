@@ -115,5 +115,7 @@
        <a href={{route('paymentMethodPage')}}>Pilih metode pembayaran</a>
    </div>
     @include('footer')
+    <script src={{asset("js/cart.js")}}></script>
+    <script src={{asset("js/userDropdown.js")}}></script>
 </body>
 </html>

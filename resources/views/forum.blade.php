@@ -61,5 +61,6 @@
     </div>
     @include('footer')
     <script src={{asset('js/forum.js')}}></script>
+    <script src={{asset("js/userDropdown.js")}}></script>
 </body>
 </html>
