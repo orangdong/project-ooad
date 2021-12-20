@@ -26,6 +26,9 @@ Route::prefix('dashboard')->middleware(['auth:sanctum'])->group(function(){
         Route::get('/', [SellerController::class, 'index'])->name('seller.dashboard');
         Route::get('/create', [SellerController::class, 'create'])->name('create-store');
         Route::post('/store', [SellerController::class, 'store'])->name('input-store');
+        Route::get('/forum', [SellerController::class, 'forum']);
+        Route::get('/storepage',[SellerController::class, 'storepage']);
+        Route::get('/managestore', [SellerController::class, 'managestore']);
         // Route::get('/{id}/edit', [SellerController::class, 'edit']);
         // Route::put('/{id}/update', [SellerController::class, 'update']);
         // Route::delete('/{id}/delete', [SellerController::class, 'delete']);

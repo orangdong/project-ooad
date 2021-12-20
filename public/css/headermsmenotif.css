@@ -10,6 +10,7 @@ header{
 }
 #widget-container{
     margin:25px 40px;
+    position: relative;
 }
 
 #widget-container a{
@@ -17,6 +18,7 @@ header{
     margin: 10px;
     text-decoration: none;
     color: black;
+   
 }
 #notif-container{
     position: relative;
@@ -48,20 +50,26 @@ h1{
     width: 20px;
 }
 
-
 #user-dropdown{
     position: absolute;
-    bottom: -200px;
+    bottom: -230px;
     display: flex;
     flex-direction: column;
     background-color: white;
     padding: 10px 40px;
     border-radius: 20px;
+    visibility: hidden;
+    justify-content: center !important;
+    align-items: center;
+    text-align: center;
+    right: 0px;
+    z-index: 5;
 }
 
 #user-dropdown h2{
     font-size: 20px;
     margin: 0;
+    font-weight: bold;
 }
 #user-name{
     margin: 0;
@@ -82,7 +90,7 @@ h1{
     margin-bottom: 10px;
 }
 #logout-btn{
-
+    border: none;
     text-decoration: none;
     font-size: 14px !important;
     font-weight: bold;

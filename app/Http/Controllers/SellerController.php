@@ -22,6 +22,18 @@ class SellerController extends Controller
         return view('create-store');
     }
 
+    public function forum(){
+        return view('forummsme');
+    }
+
+    public function storepage(){
+        return view('storePageMsmeNotif');
+    }
+
+    public function managestore(){
+        return view('manageStore');
+    }
+
     public function store(Request $request){
         $auth = Auth::user();
         $seller = Seller::where('username', $auth->username)->first();

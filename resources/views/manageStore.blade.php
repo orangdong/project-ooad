@@ -21,7 +21,7 @@
         <div id='jumbotron'>
             <h2>Batik nusa</h2>
             <p>Alamat: Labuan Bajo, Manggarai Barat</p>
-            <a href="">Forum</a>
+            <a href="/dashboard/seller/forum">Forum</a>
         </div>
         <div class='container' id='container-produk'>
             <div id='container-produk-header'>
@@ -99,5 +99,6 @@
     </main>
     @include('footer')
     <script src='/js/manageStore.js'></script>
+    <script src={{asset("js/userDropdown.js")}}></script>
 </body>
 </html>
