@@ -38,18 +38,19 @@
         </div>
        {{-- Modal Box --}}
        <div id="popup-bg">
-           <form action="" id='new-thread-form'>
+           <form method="POST" action="{{route('input-store')}}" id='new-thread-form'>
+            @csrf
             <h2>Daftar Toko</h2>
             <div id="judul-container">
                 <label for="judul">Nama Toko</label>
-                <input type="text" name="judul" id="judul" placeholder="Masukkan Nama Toko">
+                <input type="text" name="name" id="judul" placeholder="Masukkan Nama Toko">
             </div>
             <div id="judul-container">
                 <label>Deskripsi Toko</label>
-                <textarea rows="10" type="text" name="deskripsi" class="desc" placeholder="Masukkan Deskripsi Toko"></textarea>
+                <textarea rows="10" type="text" name="description" class="desc" placeholder="Masukkan Deskripsi Toko"></textarea>
             </div>
             <div id="button-container">
-                <button>Buat</button>
+                <button type="submit">Buat</button>
             </div>
            </form>
        </div>
