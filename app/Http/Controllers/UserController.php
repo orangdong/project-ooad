@@ -15,6 +15,9 @@ class UserController extends Controller
         if($seller && !$seller->store){
             return redirect(route('create-store'));
         }
+        if($seller && $seller->store){
+            return view('homepagemsme');
+        }
         return view('homepageTouristConfirm');
     }
 

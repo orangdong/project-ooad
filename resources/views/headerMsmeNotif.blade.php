@@ -17,7 +17,7 @@
         </div>
         <a href="/dashboard/seller/forum"><i class="far fa-comments"></i></a>
         <a href="" id='notif-container'><img src="assets/alert-one.png" id='notif' alt=""><i class="fas fa-receipt"></i></a>
-        <a href=""><i class="fas fa-store-alt"></i></a>
+        <a href="/dashboard/seller/storepage"><i class="fas fa-store-alt"></i></a>
         <a><i id='user-btn' class="far fa-user-circle"></i></a>
         <a href=""><i class="fas fa-cog"></i></a>
     </div>
