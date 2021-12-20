@@ -43,7 +43,16 @@ class CreateNewUser implements CreatesNewUsers
                 'number' => $input['number'],
             ]);
         }else{
-            return Seller::create([
+            Seller::create([
+                'name' => $input['name'],
+                'email' => $input['email'],
+                'password' => Hash::make($input['password']),
+                'username' => $input['username'],
+                'date_of_birth' => $input['date_of_birth'],
+                'address' => $input['address'],
+                'number' => $input['number'],
+            ]);
+            return User::create([
                 'name' => $input['name'],
                 'email' => $input['email'],
                 'password' => Hash::make($input['password']),

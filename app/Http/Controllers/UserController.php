@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Seller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -9,6 +10,11 @@ class UserController extends Controller
 {
     //
     public function index(){
+        $auth = Auth::user();
+        $seller = Seller::where('username', $auth->username)->with('store')->first();
+        if($seller && !$seller->store){
+            return redirect(route('create-store'));
+        }
         return view('homepageTouristConfirm');
     }
 

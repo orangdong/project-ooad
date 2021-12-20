@@ -18,4 +18,9 @@ class Seller extends Model
         'number',
         'date_of_birth',
     ];
+
+    public function store()
+    {
+        return $this->hasOne(Store::class);
+    }
 }
