@@ -25,7 +25,7 @@
         </div>
         <div id='container-content'>
             <div id="container-content-upper">
-                <img src="assets/logo-ovo.png" alt="">
+                <img src={{asset("assets/logo-ovo.png")}} alt="">
             </div>
             <div id='container-content-lower'>
                 <table id="container-content-table">

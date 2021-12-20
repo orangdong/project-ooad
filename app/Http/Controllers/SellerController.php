@@ -15,7 +15,7 @@ class SellerController extends Controller
         if($seller && !$seller->store){
             return redirect(route('create-store'));
         }
-        return view('manageStore');
+        return view('homepagemsme');
     }
     public function create()
     {
@@ -34,6 +34,10 @@ class SellerController extends Controller
         return view('manageStore');
     }
 
+    public function orderpage(){
+        return view('orderpage');
+    }
+
     public function store(Request $request){
         $auth = Auth::user();
         $seller = Seller::where('username', $auth->username)->first();
@@ -45,6 +49,6 @@ class SellerController extends Controller
 
         Store::create($data);
 
-        return redirect(route('seller.dashboard'));
+        return redirect('/dashboard/seller/managestore');
     }
 }

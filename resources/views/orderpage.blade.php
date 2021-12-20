@@ -25,7 +25,7 @@
         </div>
         <div id="container-content">
             <div class='pesanan'>
-                <img src="assets/user-icon.png" class='user-pic' alt="">
+                <img src={{asset("assets/user-icon.png")}} class='user-pic' alt="">
                 <div class='pesanan-text'>
                     <p class='pesanan-nama'>Acexoul</p>
                     <p>Jl. Kebon Jeruk Raya No. 27 Kebon Jeruk<br> Jakarta Barat 11530</p>
@@ -42,7 +42,7 @@
             </div>
 
             <div class='pesanan'>
-                <img src="assets/user-icon.png" class='user-pic' alt="">
+                <img src={{asset("assets/user-icon.png")}} class='user-pic' alt="">
                 <div class='pesanan-text'>
                     <p class='pesanan-nama'>William</p>
                     <p>Jl. Kebon Jeruk Raya No. 27 Kebon Jeruk<br> Jakarta Barat 11530</p>
@@ -60,5 +60,7 @@
         </div>
     </div>
     @include('footer')
+    <script src={{asset('/js/orderpage.js')}}></script>
+    <script src={{asset("js/userDropdown.js")}}></script>
 </body>
 </html>

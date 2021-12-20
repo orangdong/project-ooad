@@ -98,7 +98,7 @@
         </div>
     </main>
     @include('footer')
-    <script src='/js/manageStore.js'></script>
+    <script src={{asset('/js/manageStore.js')}}></script>
     <script src={{asset("js/userDropdown.js")}}></script>
 </body>
 </html>

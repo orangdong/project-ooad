@@ -70,9 +70,9 @@ function replyForm(){
   replyTab.id = 'reply-tab';
   containerContent.appendChild(replyTab);
 
-  const image = document.createElement('img');
-  image.src = 'assets/user-icon.png';
-  replyTab.appendChild(image);
+  // const image = document.createElement('img');
+  // image.src = 'assets/user-icon.png';
+  // replyTab.appendChild(image);
 
   const replyContainer = document.createElement('div');
   replyContainer.id = 'reply-container';

@@ -12,6 +12,11 @@
     <link rel="stylesheet" href="/css/footer.css">
     <link rel="stylesheet" href="/css/headermsmenotif.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <style>
+        h1 a{
+            color: white !important;
+        }
+    </style>
 </head>
 <body>
     @include('headerMsmeNotif')
@@ -112,7 +117,7 @@
     </main>
     
     @include('footer')
-    <script src={{asset("js/homepageTouristConfirm.js")}}></script>
+    <script src={{asset("js/homepageMsme.js")}}></script>
     <script src={{asset("js/userDropdown.js")}}></script>
 </body>
 </html>
