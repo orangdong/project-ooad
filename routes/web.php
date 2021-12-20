@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\GuestController;
 use App\Http\Controllers\UserController;
+use App\Http\Controllers\SellerController;
 use App\Models\User;
 use Illuminate\Support\Facades\Route;
 
@@ -19,6 +20,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [GuestController::class, 'index']);
 Route::get('/forum', [GuestController::class, 'forum']);
 Route::get('/storepage',[GuestController::class, 'store_page']);
+Route::get('/create',[SellerController::class, 'create']);
 
 Route::prefix('dashboard')->middleware(['auth:sanctum'])->group(function(){
     Route::get('/', [UserController::class, 'index']);
