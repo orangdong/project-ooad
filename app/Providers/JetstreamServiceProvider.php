@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 use App\Actions\Jetstream\DeleteUser;
+use App\Models\Seller;
 use Illuminate\Support\ServiceProvider;
 use Laravel\Jetstream\Jetstream;
 use App\Models\User;
@@ -36,6 +37,13 @@ class JetstreamServiceProvider extends ServiceProvider
                 Hash::check($request->password, $user->password)) {
                 return $user;
             }
+            //seller
+            // if(!$user){
+            //     $user = Seller::where('username', $request->email)->first();
+            //     if($user && Hash::check($request->password, $user->password)){
+            //         return $user;
+            //     }
+            // }
         });
 
         $this->configurePermissions();
